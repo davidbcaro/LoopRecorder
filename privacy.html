@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Política de privacidad · Loop Recorder</title>
+    <meta name="description" content="Política de privacidad de Loop Recorder: qué datos de Google usa la app, cómo los guarda y cómo puedes revocar el acceso." />
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap">
+        <img src="logo.svg" alt="" />
+        <strong>Loop Recorder</strong>
+        <nav><a href="./">Inicio</a><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a></nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <p class="lang">Español · <a href="#english">English version below</a></p>
+      <h1>Política de privacidad</h1>
+      <p class="meta">Última actualización: 15 de octubre de 2026</p>
+
+      <p>
+        Loop Recorder (“la app”) es una aplicación de escritorio para Windows que graba la pantalla, la cámara web y el audio,
+        y permite guardar esas grabaciones en el Google Drive del propio usuario para compartirlas con un enlace. Esta política
+        explica qué información trata la app, para qué la usa y qué control tienes sobre ella.
+      </p>
+
+      <div class="box">
+        <strong>Resumen:</strong> la app funciona en tu equipo. No tenemos servidores, no recopilamos analíticas y no vendemos ni
+        compartimos tus datos. Lo que grabas se guarda en tu equipo y, si conectas tu cuenta, en <b>tu</b> Google Drive.
+      </div>
+
+      <h2>1. Responsable</h2>
+      <p>
+        La app la desarrolla y mantiene el autor del repositorio <a href="https://github.com/davidbcaro/LoopRecorder">github.com/davidbcaro/LoopRecorder</a> (“el desarrollador”). Para cualquier consulta sobre privacidad escribe a
+        <a href="mailto:d4vidbohorquez@gmail.com">d4vidbohorquez@gmail.com</a>.
+      </p>
+
+      <h2>2. Datos de Google a los que accede la app</h2>
+      <p>Solo si decides conectar tu cuenta de Google, la app solicita estos permisos (scopes) de OAuth:</p>
+      <table>
+        <tr><th>Permiso</th><th>Qué permite</th><th>Para qué lo usa la app</th></tr>
+        <tr>
+          <td><code>openid</code>, <code>email</code></td>
+          <td>Conocer la dirección de correo de la cuenta conectada.</td>
+          <td>Mostrar en la app con qué cuenta estás conectado. No se usa para nada más.</td>
+        </tr>
+        <tr>
+          <td><code>https://www.googleapis.com/auth/drive.file</code></td>
+          <td>Ver y gestionar <b>solo</b> los archivos de Google Drive que la propia app ha creado.</td>
+          <td>
+            Crear la carpeta “Loop Recordings”, subir tus grabaciones, mostrar la lista de grabaciones subidas con su miniatura,
+            cambiar el nombre, enviarlas a la papelera y gestionar quién puede verlas (enlace público o invitación por correo),
+            siempre a petición tuya.
+          </td>
+        </tr>
+      </table>
+      <p>
+        La app <b>no</b> puede ver, leer ni modificar ningún otro archivo de tu Google Drive, ni tu Gmail, contactos, calendario
+        u otros servicios de Google.
+      </p>
+
+      <h2>3. Otros datos que trata la app</h2>
+      <ul>
+        <li><b>Grabaciones de vídeo y audio</b> de la pantalla, la cámara y el micrófono, solo mientras pulsas grabar.</li>
+        <li><b>Títulos, descripciones y notas con marca de tiempo</b> que escribes para cada grabación.</li>
+        <li><b>Preferencias</b> (dispositivos elegidos, calidad, atajos, etc.).</li>
+        <li><b>Credenciales OAuth</b>: el identificador de cliente que configuras y el token de acceso de Google.</li>
+      </ul>
+
+      <h2>4. Cómo se usan los datos</h2>
+      <p>
+        Los datos se usan exclusivamente para ofrecer las funciones que ves en la app: grabar, reproducir, guardar en tu
+        Drive y compartir. No se usan con fines publicitarios, de elaboración de perfiles ni de análisis, y no se transfieren
+        a terceros.
+      </p>
+      <p>
+        <b>Uso limitado.</b> El uso y la transferencia por parte de Loop Recorder de la información recibida de las API de
+        Google cumplen la
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de las API de Google</a>,
+        incluidos los requisitos de uso limitado (Limited Use). En particular:
+      </p>
+      <ul>
+        <li>Los datos de Google solo se usan para ofrecer y mejorar las funciones visibles para el usuario descritas arriba.</li>
+        <li>No se transfieren a terceros, salvo cuando tú mismo decides compartir una grabación con otras personas.</li>
+        <li>No se usan para publicidad, ni se venden, ni se usan para evaluar solvencia crediticia.</li>
+        <li>Ninguna persona lee tus datos, salvo con tu consentimiento expreso para un caso concreto de soporte o cuando lo exija la ley.</li>
+        <li>No se usan para entrenar modelos de inteligencia artificial o aprendizaje automático, generalizados o no.</li>
+      </ul>
+
+      <h2>5. Dónde se almacenan</h2>
+      <ul>
+        <li>
+          <b>En tu equipo:</b> grabaciones, notas y preferencias se guardan en la carpeta de datos de la app
+          (<code>%APPDATA%\Loop Recorder</code>). El token de Google se guarda cifrado con la protección de datos de Windows (DPAPI).
+        </li>
+        <li><b>En tu Google Drive:</b> las grabaciones que subes, en la carpeta “Loop Recordings” de tu propia cuenta.</li>
+        <li>
+          <b>En ningún otro sitio:</b> la app se comunica directamente con los servidores de Google mediante conexiones cifradas
+          (HTTPS). El desarrollador no tiene servidores y no recibe copia de tus datos.
+        </li>
+      </ul>
+
+      <h2>6. Compartir</h2>
+      <p>
+        Las grabaciones solo se comparten cuando tú lo decides: creando un enlace de Drive (“cualquiera con el enlace”) o
+        invitando a personas por correo. Puedes cambiar a acceso restringido en cualquier momento desde la app o desde Google Drive.
+      </p>
+
+      <h2>7. Conservación y eliminación</h2>
+      <ul>
+        <li>Puedes borrar cualquier grabación local desde la Biblioteca de la app.</li>
+        <li>Puedes enviar cualquier grabación de Drive a la papelera desde la app o desde Google Drive.</li>
+        <li>Al desinstalar la app, borra la carpeta <code>%APPDATA%\Loop Recorder</code> para eliminar todos los datos locales.</li>
+        <li>Pulsar “Desconectar” en Ajustes revoca el token de Google y lo elimina del equipo.</li>
+      </ul>
+
+      <h2>8. Revocar el acceso</h2>
+      <p>
+        Además de “Desconectar” en la app, puedes revocar el acceso en cualquier momento desde
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revocarlo no borra los vídeos
+        que ya están en tu Drive.
+      </p>
+
+      <h2>9. Menores</h2>
+      <p>La app no está dirigida a menores de 13 años y no recopila de forma consciente datos de menores.</p>
+
+      <h2>10. Cambios</h2>
+      <p>
+        Si esta política cambia, se publicará aquí con una nueva fecha de actualización. Si el cambio afecta a cómo se usan los
+        datos de Google, se te pedirá de nuevo el consentimiento en la app.
+      </p>
+
+      <h2>11. Contacto</h2>
+      <p>Preguntas o solicitudes: <a href="mailto:d4vidbohorquez@gmail.com">d4vidbohorquez@gmail.com</a>.</p>
+
+      <hr />
+
+      <section id="english" lang="en">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: October 15, 2026</p>
+        <p>
+          Loop Recorder (“the app”) is a Windows desktop application that records the screen, webcam and audio, and lets users
+          save those recordings to their own Google Drive and share them with a link. This policy explains what information the
+          app handles, why, and what control you have over it.
+        </p>
+        <div class="box">
+          <strong>Summary:</strong> the app runs on your computer. We have no servers, collect no analytics, and never sell or
+          share your data. Your recordings stay on your computer and, if you connect your account, in <b>your</b> Google Drive.
+        </div>
+
+        <h2>1. Who is responsible</h2>
+        <p>The app is developed and maintained by the owner of the <a href="https://github.com/davidbcaro/LoopRecorder">github.com/davidbcaro/LoopRecorder</a> repository (“the developer”). Contact: <a href="mailto:d4vidbohorquez@gmail.com">d4vidbohorquez@gmail.com</a>.</p>
+
+        <h2>2. Google user data the app accesses</h2>
+        <p>Only if you choose to connect your Google account, the app requests these OAuth scopes:</p>
+        <table>
+          <tr><th>Scope</th><th>What it allows</th><th>How the app uses it</th></tr>
+          <tr>
+            <td><code>openid</code>, <code>email</code></td>
+            <td>Read the email address of the connected account.</td>
+            <td>Show which account is connected inside the app. Not used for anything else.</td>
+          </tr>
+          <tr>
+            <td><code>https://www.googleapis.com/auth/drive.file</code></td>
+            <td>See and manage <b>only</b> the Google Drive files that the app itself created.</td>
+            <td>
+              Create the “Loop Recordings” folder, upload your recordings, list the uploaded recordings with thumbnails, rename
+              them, move them to the trash, and manage who can view them (public link or email invitation), always at your request.
+            </td>
+          </tr>
+        </table>
+        <p>The app <b>cannot</b> see, read or modify any other file in your Google Drive, nor your Gmail, contacts, calendar or other Google services.</p>
+
+        <h2>3. Other data the app handles</h2>
+        <ul>
+          <li><b>Video and audio recordings</b> of your screen, camera and microphone, only while you are recording.</li>
+          <li><b>Titles, descriptions and timestamped notes</b> you write for each recording.</li>
+          <li><b>Preferences</b> (selected devices, quality, shortcuts, etc.).</li>
+          <li><b>OAuth credentials</b>: the client ID you configure and your Google access token.</li>
+        </ul>
+
+        <h2>4. How data is used</h2>
+        <p>
+          Data is used solely to provide the user-facing features of the app: recording, playback, saving to your Drive, and
+          sharing. It is not used for advertising, profiling or analytics, and it is not transferred to third parties.
+        </p>
+        <p>
+          <b>Limited Use.</b> Loop Recorder's use and transfer of information received from Google APIs to any other app will
+          adhere to the
+          <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+          including the Limited Use requirements. In particular:
+        </p>
+        <ul>
+          <li>Google user data is only used to provide and improve the user-facing features described above.</li>
+          <li>It is not transferred to third parties, except when you yourself choose to share a recording with other people.</li>
+          <li>It is not used for advertising, sold, or used to determine credit-worthiness.</li>
+          <li>No human reads your data unless you give explicit consent for a specific support case, or as required by law.</li>
+          <li>It is not used to develop, improve or train generalized or non-generalized AI and/or ML models.</li>
+        </ul>
+
+        <h2>5. Where data is stored</h2>
+        <ul>
+          <li>
+            <b>On your computer:</b> recordings, notes and preferences are stored in the app's data folder
+            (<code>%APPDATA%\Loop Recorder</code>). The Google token is encrypted with Windows Data Protection (DPAPI).
+          </li>
+          <li><b>In your Google Drive:</b> the recordings you upload, inside the “Loop Recordings” folder of your own account.</li>
+          <li>
+            <b>Nowhere else:</b> the app talks directly to Google's servers over encrypted connections (HTTPS). The developer
+            operates no servers and receives no copy of your data.
+          </li>
+        </ul>
+
+        <h2>6. Sharing</h2>
+        <p>
+          Recordings are only shared when you decide to: by creating a Drive link (“anyone with the link”) or by inviting
+          people by email. You can switch back to restricted access at any time from the app or from Google Drive.
+        </p>
+
+        <h2>7. Retention and deletion</h2>
+        <ul>
+          <li>You can delete any local recording from the app's Library.</li>
+          <li>You can move any Drive recording to the trash from the app or from Google Drive.</li>
+          <li>When uninstalling, delete the <code>%APPDATA%\Loop Recorder</code> folder to remove all local data.</li>
+          <li>Clicking “Disconnect” in Settings revokes the Google token and removes it from your computer.</li>
+        </ul>
+
+        <h2>8. Revoking access</h2>
+        <p>
+          Besides “Disconnect” in the app, you can revoke access at any time at
+          <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revoking access does not
+          delete videos that are already in your Drive.
+        </p>
+
+        <h2>9. Children</h2>
+        <p>The app is not directed to children under 13 and does not knowingly collect data from children.</p>
+
+        <h2>10. Changes</h2>
+        <p>
+          If this policy changes, the new version will be published on this page with a new date. If a change affects how
+          Google user data is used, the app will ask for your consent again.
+        </p>
+
+        <h2>11. Contact</h2>
+        <p>Questions or requests: <a href="mailto:d4vidbohorquez@gmail.com">d4vidbohorquez@gmail.com</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© 2026 Loop Recorder</span>
+        <a href="./">Inicio</a>
+        <a href="privacy.html">Política de privacidad</a>
+        <a href="terms.html">Términos del servicio</a>
+      </div>
+    </footer>
+  </body>
+</html>
